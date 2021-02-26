@@ -22,7 +22,7 @@ url     : https://jaychen.fun # the base hostname & protocol for your site e.g. 
 baseurl : # does not include hostname
 title   : JayChen's story
 description: > # this means to ignore newlines until "Language & timezone"
-  Your Site Description
+  JayChen's story
 
 
 ## => Language and Timezone
