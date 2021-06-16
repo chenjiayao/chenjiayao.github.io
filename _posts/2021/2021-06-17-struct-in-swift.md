@@ -68,7 +68,7 @@ s.addAge()
 
 那么这个特性在 swiftUI 中有何体现？
 
-## `@State with struct`
+## @State with struct
 
 下面的 swiftUI 代码肯定很熟悉
 
