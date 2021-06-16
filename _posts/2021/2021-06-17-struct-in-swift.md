@@ -94,3 +94,5 @@ struct ContentView: View {
 注意到，`User` 是使用 struct 定义的，而不是 class，那么如同上面我们提到的，每次修改 `user.name` 的值，其实都会创建一个新的 `User` 实例重新赋值给 `user` 变量，`@State` 观察到 `user` 变化，便通知 UI 进行更新
 
 如果把 `User` 从 struct 改成 class，会发现 UI 不会更新，这是因为 class 是「引用类型」，属性值变化不会创建一个新的 `User class` 赋值给 `user` 变量，`user` 变量没有变化，UI 也无法收到通知。
+
+但是由于 struct 是值类型，如果要在 swiftUI 多个 view 中共享数据，就需要使用 class，而 `@State` 无法和 class 一起使用，那应该如何？这时候就需要 `@Published` 和 `@ObservedObject` 了。
